@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+
+
+
+<div id='content' class='centered'>
+
+    <div id='all-cupcakes'>
+
+        <h1>Cupcakes</h1>
+
+        <div id='cupcakes-display'></div>
+    
+        <div id='add-cupcake-button' class='btn btn-success'>Add Cupcake</div>
+
+    </div>
+
+    <div id='single-cupcake'>
+
+        <h1>Details</h1>
+
+        <div id='cupcake-display'>
+            <img id='cupcake-image'>              
+            <div id='cupcake-flavor'></div>
+            <div id='cupcake-size'></div>
+            <div id='cupcake-rating'></div>
+        </div>
+
+        <a href='/'>Return</a>
+    </div>
+
+    <div id='edit-cupcake'>
+
+        <h1>Edit Cupcake</h1>
+
+        <div id='cupcake-display'>
+
+            <div>image url</div>
+            <input type='text' id='cupcake-image-edit'>
+            <div>flavor</div>
+            <input type='text' id='cupcake-flavor-edit'>
+            <div>size</div>
+            <input type='text' id='cupcake-size-edit'>
+            <div>rating</div>
+            <input type='text' id='cupcake-rating-edit'>
+
+        </div>     
+        <div id='submit-edited-button'class='btn btn-success'>Submit</div>
+
+    </div>
+
+    <div id='add-cupcake'>
+
+        <h1>Add Cupcake</h1>
+
+        <div id='cupcake-display'>
+
+            <div>image url</div>
+            <input type='text' id='cupcake-image-add'>
+            <div>flavor</div>
+            <input type='text' id='cupcake-flavor-add'>
+            <div>size</div>
+            <input type='text' id='cupcake-size-add'>
+            <div>rating</div>
+            <input type='text' id='cupcake-rating-add'>
+
+        </div>     
+        <div id='submit-added-button'class='btn btn-success'>Submit</div>
+
+    </div>
+
+    
+
+</div>
+
+{% endblock %}
+
+{%block scripts%} <script src='static/displayCupcakes.js'></script> {%endblock%}
